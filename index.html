@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Conversor Ju</title>
+
+
+<script>
+
+function converter(){
+	var content = document.getElementById("content");
+	var doc = document.getElementById("txt-input");
+	
+	content.innerHTML = atob(doc.value.trim());
+
+}
+
+</script>
+</head>
+
+<body>
+
+<textarea id="txt-input">
+
+</textarea>
+
+<button onclick="converter();">Converter</button>
+
+<div id="content">
+
+</div>
+</body>
+
+</html>
